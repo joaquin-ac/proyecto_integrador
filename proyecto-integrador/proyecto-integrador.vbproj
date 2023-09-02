@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1EF8048-F70F-4B45-B75E-00C3C7E2B9E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>proyecto_integrador.My.MyApplication</StartupObject>
+    <RootNamespace>proyecto_integrador</RootNamespace>
+    <AssemblyName>proyecto-integrador</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>proyecto-integrador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>proyecto-integrador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListarClientes.Designer.vb">
+      <DependentUpon>FormListarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario5.designer.vb">
+      <DependentUpon>Formulario5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCliente.designer.vb">
+      <DependentUpon>FormularioCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProducto.designer.vb">
+      <DependentUpon>FormularioProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioVendedor.designer.vb">
+      <DependentUpon>FormularioVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioVendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormListarClientes.resx">
+      <DependentUpon>FormListarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario5.resx">
+      <DependentUpon>Formulario5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCliente.resx">
+      <DependentUpon>FormularioCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProducto.resx">
+      <DependentUpon>FormularioProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioVendedor.resx">
+      <DependentUpon>FormularioVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadros-negros-734708.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-add_icon-icons.com_50077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\futbol.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-agregar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-prod.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-prod.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-prod1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-prod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendedor.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
