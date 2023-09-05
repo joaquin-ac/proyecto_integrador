@@ -186,7 +186,10 @@ Partial Class FormListarClientes
         Me.Controls.Add(Me.LNombre)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "FormListarClientes"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormListarClientes"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

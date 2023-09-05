@@ -316,6 +316,7 @@ Partial Class FormularioCliente
         Me.Name = "FormularioCliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Formulario con DataGrid"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.PanelPrincipal.ResumeLayout(False)
         Me.PanelPrincipal.PerformLayout()
         CType(Me.PBAvatar, System.ComponentModel.ISupportInitialize).EndInit()
