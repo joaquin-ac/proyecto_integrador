@@ -3,7 +3,7 @@
 Public Class MDIParent1
 
 
-    Private Sub OpenFile(ByVal sender As Object, ByVal e As EventArgs) Handles OpenToolStripMenuItem.Click
+    Private Sub OpenFile(ByVal sender As Object, ByVal e As EventArgs) Handles BListarClientes.Click
         For Each ChildForma As Form In Me.MdiChildren
             ChildForma.Close()
         Next
@@ -61,7 +61,7 @@ Public Class MDIParent1
         ChildForm.Show()
     End Sub
 
-    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles StatusBarToolStripMenuItem.Click
+    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BListarVendedores.Click
         For Each ChildForma As Form In Me.MdiChildren
             ChildForma.Close()
         Next
@@ -137,22 +137,25 @@ Public Class MDIParent1
 
     End Sub
 
-    Private Sub NuevoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem.Click
-        For Each ChildForma As Form In Me.MdiChildren
-            ChildForma.Close()
-        Next
-        ' Cree una nueva instancia del formulario secundario.
-        Dim ChildForm As New FormularioVendedor
-        ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
-        ChildForm.MdiParent = Me
+    'Nuevo Cliente
 
-        m_ChildFormNumber += 1
-        ChildForm.Text = "Nuevo Cliente"
+    'Private Sub NuevoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem.Click
+    '    For Each ChildForma As Form In Me.MdiChildren
+    '        ChildForma.Close()
+    '    Next
+    '    ' Cree una nueva instancia del formulario secundario.
+    '    Dim ChildForm As New FormularioVendedor
+    '    ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
+    '    ChildForm.MdiParent = Me
 
-        ChildForm.Show()
-    End Sub
+    '    m_ChildFormNumber += 1
+    '    ChildForm.Text = "Nuevo Cliente"
 
-    Private Sub NuevoToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem2.Click
+    '    ChildForm.Show()
+    'End Sub ''
+
+    'Nuevo Producto
+    Private Sub NuevoToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles BNuevoProducto.Click
         For Each ChildForma As Form In Me.MdiChildren
             ChildForma.Close()
         Next
@@ -167,7 +170,8 @@ Public Class MDIParent1
         ChildForm.Show()
     End Sub
 
-    Private Sub ListarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarToolStripMenuItem.Click
+    'Listar Producto
+    Private Sub ListarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BListarProducto.Click
         For Each ChildForma As Form In Me.MdiChildren
             ChildForma.Close()
         Next
@@ -182,22 +186,27 @@ Public Class MDIParent1
         ChildForm.Show()
     End Sub
 
-    Private Sub NuevoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem1.Click
-        For Each ChildForma As Form In Me.MdiChildren
-            ChildForma.Close()
-        Next
-        ' Cree una nueva instancia del formulario secundario.
-        Dim ChildForm As New FormularioVendedor
-        ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
-        ChildForm.MdiParent = Me
+    'Nuevo Vendedor
+    'Private Sub NuevoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem1.Click
+    '    For Each ChildForma As Form In Me.MdiChildren
+    '        ChildForma.Close()
+    '    Next
+    '    ' Cree una nueva instancia del formulario secundario.
+    '    Dim ChildForm As New FormularioVendedor
+    '    ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
+    '    ChildForm.MdiParent = Me
 
-        m_ChildFormNumber += 1
-        ChildForm.Text = "Nuevo Vendedor"
+    '    m_ChildFormNumber += 1
+    '    ChildForm.Text = "Nuevo Vendedor"
 
-        ChildForm.Show()
+    '    ChildForm.Show()
+    'End Sub
+
+    Private Sub EditMenu_Click(sender As Object, e As EventArgs) Handles BProductos.Click
+
     End Sub
 
-    Private Sub EditMenu_Click(sender As Object, e As EventArgs) Handles EditMenu.Click
+    Private Sub BVendedores_Click(sender As Object, e As EventArgs) Handles BVendedores.Click
 
     End Sub
 End Class

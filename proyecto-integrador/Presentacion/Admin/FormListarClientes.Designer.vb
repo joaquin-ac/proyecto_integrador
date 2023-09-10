@@ -187,7 +187,7 @@ Partial Class FormListarClientes
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "FormListarClientes"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FormListarClientes"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
